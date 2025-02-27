@@ -1,0 +1,25 @@
+{
+  "name": "indoscript-language-support",
+  "displayName": "IndoScript Language Support",
+  "description": "IndoScript Language Support",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "indoscript",
+      "aliases": ["IndoScript", "indoscript"],
+      "extensions": ["is"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "indoscript",
+      "scopeName": "source.is",
+      "path": "./syntaxes/indoscript.tmLanguage.json"
+    }]
+  }
+}
